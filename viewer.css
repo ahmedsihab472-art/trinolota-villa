@@ -1,0 +1,8 @@
+body.viewer .acts,
+body.viewer .b-go,
+body.viewer .b-r,
+body.viewer .b-g,
+body.viewer a[data-page="migrate"],
+body.viewer #main .box:has(#ccAmt) { display: none !important; }
+body.viewer td.mc,
+body.viewer .st { pointer-events: none; }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#7c3aed">
+<title>Trinolota Villa</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+
+<div id="lock"></div>
+
+<header>
+  <button id="menuBtn">☰</button>
+  <div class="ht">
+    <h1>🏡 Trinolota Villa</h1>
+    <small id="title">ড্যাশবোর্ড</small>
+  </div>
+  <button id="themeBtn" onclick="toggleTheme()">🌙</button>
+</header>
+
+<nav id="sidebar">
+  <div class="brand">
+    <h2>🏡 Trinolota Villa</h2>
+    <p>Smart Hostel Management</p>
+  </div>
+  <a data-page="dashboard">📊 ড্যাশবোর্ড</a>
+  <a data-page="members">👥 সদস্য</a>
+  <a data-page="meals">🍽️ মিল লিস্ট</a>
+  <a data-page="migrate">🔄 মিল মাইগ্রেশন</a>
+  <a data-page="payments">💳 পেমেন্ট</a>
+  <a data-page="expenses">🛒 বাজার</a>
+  <a data-page="dues">🧾 বাকি পরিশোধ</a>
+  <a data-page="cooks">👨‍🍳 রান্নার খরচ</a>
+  <a data-page="fines">⚠️ জরিমানা</a>
+  <a data-page="report">📑 মাসিক রিপোর্ট</a>
+  <a id="logout">🔑 এডমিন লগইন</a>
+</nav>
+
+<main id="main"></main>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="cloud.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
